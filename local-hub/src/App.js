@@ -9,7 +9,7 @@ import Header from "./Header";
 function App() {
   return (
     <>
-      <div className="app">Hello World!</div>
+    {/* <div className="app">Hello World!</div> */}
       <Router>
         <Routes>
           <Route path="/" element={<Header />} />
