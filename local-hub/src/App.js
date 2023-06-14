@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -9,10 +7,18 @@ import Header from "./Header";
 function App() {
   return (
     <>
-    {/* <div className="app">Hello World!</div> */}
+      {/* <div className="app">Hello World!</div> */}
       <Router>
         <Routes>
-          <Route path="/" element={<Header />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Home />
+              </>
+            }
+          />
         </Routes>
       </Router>
     </>
