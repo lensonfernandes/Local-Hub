@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StateProvider } from "./StateProvider";
 import { reducer, initialState } from "./reducer";
+import {db, auth} from './utils/firebase';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
