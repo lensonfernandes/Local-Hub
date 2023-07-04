@@ -5,10 +5,14 @@ import "../src/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import SearchBar from "./SearchBar";
+import { useStateValue } from "./StateProvider";
 
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
+
 const Header = () => {
+
+  const [{basket}] = useStateValue();
   return (
     <header className="header">
       <div className="nav-section">
@@ -26,7 +30,7 @@ const Header = () => {
       <div className="nav-section">
         <a href="#" className="nav-link basket-icon">
           <FontAwesomeIcon icon={faShoppingBasket} />
-          <span className="basket-count">0</span>
+          <span className="basket-count">{basket.length}</span>
         </a>
       </div>
     </header>
