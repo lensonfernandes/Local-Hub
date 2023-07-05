@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header">
       <div className="nav-section">
         <img src={logo} alt="Logo" className="logo" /> <SearchBar />
-        <a href="#" className="nav-link">
+        <a href="/login" className="nav-link">
           Login
         </a>
         <a href="#" className="nav-link">

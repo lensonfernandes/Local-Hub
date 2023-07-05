@@ -31,7 +31,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <Login />
+      {/* <Login /> */}
     </>
   );
 };
